@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main_left {
+  max-width: 689px;
+  width: 100%;
+}
+
+.main_right {
+  max-width: 525px;
+  width: 100%;
+}

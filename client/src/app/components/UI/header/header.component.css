@@ -1,0 +1,83 @@
+/* Общие стили для header */
+header {
+  margin: 0 auto;
+}
+
+.header-top {
+  background-color: #1c252c;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 20px 25px;
+  text-align: center; /* Добавлено для выравнивания по центру */
+}
+
+.header-top .logo {
+  width: 319px;
+  display: inline-block; /* Заменено float на inline-block для центрирования */
+  padding: 0px 0 0 1px;
+  text-align: left; /* Внутренний текст выравнивается влево */
+}
+
+.header-top .logo a{
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 60px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-top .logo a span{
+  color: #FFB01F;
+}
+
+.header-top .header_contacts {
+  width: 455px;
+  display: inline-block; /* Заменено float на inline-block для центрирования */
+  color: #B6BFC9;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 8px 0 0 5px;
+  /*margin: 10px 20px 3px 0;*/
+  text-align: left; /* Внутренний текст выравнивается влево */
+}
+
+.header-top .header_contacts .phone {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  word-spacing: 1px;
+  padding: 0 0 2px 0;
+}
+
+
+/* Стили для .header-bottom */
+.header-bottom {
+  border: 2px solid #1c252c; /* Параметры границы */
+  background-color: #d0d0d0;
+  padding: 20px 0 20px 0;
+  font-size: 20px;
+}
+
+/* Стили для навигационного меню */
+.header-bottom nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Стили для левой части навигации */
+.header-bottom .left-content a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Стили для правой части навигации */
+.header-bottom .right-content a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
