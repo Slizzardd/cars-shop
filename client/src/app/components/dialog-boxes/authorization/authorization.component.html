@@ -1,0 +1,60 @@
+<form class="my-container" [formGroup]="registrationForm" (ngSubmit)="onSubmitReg()" *ngIf="registration">
+  <p class="quit" (click)="close()">X</p>
+  <div class="registration-form-container">
+    <h1 class="form-title">
+      Registration
+    </h1>
+
+    <p style="color: red">{{error}}</p>
+
+    <div class="form-field">
+      <input type="text" formControlName="firstName" placeholder="First name" id="firstName">
+    </div>
+    <div class="form-field">
+      <input type="text" formControlName="lastName" placeholder="Last name" id="lastName">
+    </div>
+    <div class="form-field">
+      <input type="text" formControlName="email" placeholder="Email" id="email">
+    </div>
+    <div class="form-field">
+      <input type="text" formControlName="phoneNumber" placeholder="Phone number" id="phoneNumber">
+    </div>
+    <div class="form-field">
+      <input type="password" formControlName="password1" placeholder="Password" id="password1">
+    </div>
+    <div class="form-field">
+      <input type="password" formControlName="password2" placeholder="Repeat your password" id="password2">
+    </div>
+
+    <div class="form-buttons">
+      <button class="button" type="submit">Registration</button>
+      <div class="divider">Do you already have an account?</div>
+      <div class="button" (click)="goToLogin()">Login</div>
+    </div>
+  </div>
+</form>
+
+<form class="my-container" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()" *ngIf="!registration">
+  <p class="quit" (click)="close()">X</p>
+  <div class="registration-form-container">
+    <h1 class="form-title">
+      Login
+    </h1>
+
+    <p style="color: red">{{error}}</p>
+
+    <div class="form-field">
+      <input type="text" formControlName="email" placeholder="Email" id="loginEmail">
+    </div>
+    <div class="form-field">
+      <input type="password" formControlName="password" placeholder="Password" id="loginPassword">
+    </div>
+
+    <div class="form-buttons">
+      <button class="button" type="submit">Login</button>
+      <div class="divider">Don't you have an account?</div>
+      <div class="button" (click)="goToRegistration()">Registration</div>
+    </div>
+  </div>
+</form>
+

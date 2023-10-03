@@ -23,3 +23,28 @@ swiper-container {
   margin-left: auto;
   margin-right: auto;
 }
+
+.custom-card {
+}
+
+.custom-card-desc{
+  background-color: #1c232b;
+  display: inline-block;
+  color: #fff;
+  padding: 30px;
+  /*margin: 30px;*/
+}
+
+.custom-card .car-name{
+  /*float: left;*/
+}
+
+.custom-card .car-desc{
+  color: rgb(169, 181, 189);
+  float: left;
+}
+
+.custom-card .car-price{
+  color: #FFB01F;
+  float: right;
+}
