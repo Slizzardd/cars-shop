@@ -24,6 +24,7 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatSelectModule} from "@angular/material/select";
 import {MatListModule} from "@angular/material/list";
 import {MatTableModule} from "@angular/material/table";
+import { MessageComponent } from './components/dialog-boxes/message/message.component';
 
 register();
 
@@ -36,6 +37,7 @@ register();
     TopCarsSwiperComponent,
     SearchCarComponent,
     AuthorizationComponent,
+    MessageComponent,
 
   ],
   imports: [
